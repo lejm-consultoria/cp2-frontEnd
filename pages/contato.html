@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iki No Modan – Contato</title>
+  <link rel="stylesheet" href="../src/css/contato.css"/>
+  <script src="../src/js/script.js"></script>
 </head>
 <body>
-    
+  <!-- Header fornecido -->
+  <header>
+    <h1>Iki No Modan</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../pages/sobre.html">Sobre</a>
+      <a href="../pages/contato.html">Contato</a>
+      <a href="../pages/cardapio.html">Cardápio</a>
+      <button onclick="tryOpenNewContactPage()">Faça um pedido</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção de Feedback -->
+    <section id="feedback" aria-labelledby="feedback-title">
+      <h2 id="feedback-title">Deixe seu feedback</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="descricao">Descrição:</label>
+          <textarea id="descricao" name="descricao" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section id="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title" class="visually-hidden">Depoimentos</h2>
+      <ul class="testimonials-grid">
+        <li class="testimonial">
+          <figure>
+            <blockquote>
+              “Muito sabor e capricho na comida!!”
+            </blockquote>
+            <figcaption>
+              <img src="https://ae01.alicdn.com/kf/S843bd9f695af4228bf21f18363fb2e5cX.jpg_640x640q90.jpg" alt="Foto de Michael B. Jordan">
+              <cite>Michael B. Jordan</cite>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <figure>
+            <blockquote>
+              “Restaurante muito aconchegante e acolhedor. #ÉTOIS #MeninoNey ✌🍣”
+            </blockquote>
+            <figcaption>
+              <img src="https://i.pinimg.com/736x/ba/4b/4d/ba4b4d89ee0dcc15ac908758e0eb737a.jpg" alt="Foto de Neymar Jr.">
+              <cite>Neymar Jr.</cite>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <figure>
+            <blockquote>
+              “Ótimo atendimento.”
+            </blockquote>
+            <figcaption>
+              <img src="https://i.pinimg.com/736x/c8/5b/b0/c85bb0c21ead34f513f0b141ab0fe57c.jpg" alt="Foto de Jade Picon">
+              <cite>Jade Picon</cite>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé com contatos -->
+  <footer>
+    <p class="footer-heading">Entre em contato com a gente</p>
+    <ul class="contact-list">
+      <li>
+        <a href="https://wa.me/5511985281651" target="_blank" rel="noopener">
+          <span class="icon">📱</span>
+          +55 (11) 95281-1651
+        </a>
+      </li>
+      <li>
+        <a href="mailto:ikinomodanjp@gmail.com">
+          <span class="icon">✉️</span>
+          ikinomodanjp@gmail.com
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/ikinomodanjp" target="_blank" rel="noopener">
+          <span class="icon">📷</span>
+          @ikinomodanjp
+        </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>

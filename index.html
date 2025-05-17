@@ -4,89 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Iki No Modan</title>
-  <link rel="stylesheet" href="src/css/style.css"/>
-
-  
+  <link rel="stylesheet" href="./src/css/style.css"/>
+  <script defer src="./src/js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Iki No Modan</h1>
-    <nav>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
-      <a href="#">Cardápio</a>
-      <button>Faça um pedido</button>
+  <header class="site-header">
+    <h1 class="site-title">Iki No Modan</h1>
+    <nav class="site-nav" aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/sobre.html">Sobre</a></li>
+        <li><a href="./pages/contato.html">Contato</a></li>
+        <li><a href="./pages/cardapio.html">Cardápio</a></li>
+        <li><button class="order-btn" id="orderBtn" onclick="tryOpenNewContactPage()">Faça um pedido</button></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="search">
-    <div class="search-box">
-      <input type="text" placeholder="Pesquisar...">
-    </div>
-  </section>
+  <main>
+    <section class="search" aria-label="Busca">
+      <form class="search-form" role="search">
+        <label for="searchInput" class="visually-hidden">Pesquisar</label>
+        <input id="searchInput" type="search" placeholder="Pesquisar..." />
+        <button type="submit" class="search-btn" aria-label="Pesquisar">&#128269;</button>
+      </form>
+    </section>
 
-  <section class="plans">
-    <div class="plan">
-      <h2>Rodízio Expresso</h2>
-      <p>Perfeito para uma refeição rápida e deliciosa no almoço durante a semana.</p>
-      <span>Incluso apenas o rodízio.</span>
-    </div>
-    <div class="plan">
-      <h2>Rodízio Especial</h2>
-      <p>Nosso sucesso de vendas, com uma grande variedade de pratos, incluindo frutos do mar, servido no almoço e jantar, todos os dias.</p>
-      <span>Incluso rodízio e bebidas.</span>
-    </div>
-    <div class="plan">
-      <h2>Rodízio Executivo</h2>
-      <p>Uma opção completa para quem busca uma experiência de almoço diferenciada.</p>
-      <span>Incluso rodízio, bebidas e sobremesa.</span>
-    </div>
-  </section>
+    <section class="plans" aria-labelledby="plansTitle">
+      <h2 id="plansTitle" class="visually-hidden">Planos de Rodízio</h2>
+      <article class="plan expresso">
+        <h3>Rodízio Expresso</h3>
+        <p>Perfeito para uma refeição rápida e deliciosa no almoço durante a semana.</p>
+        <p class="note">Incluso apenas o rodízio.</p>
+      </article>
+      <article class="plan especial">
+        <h3>Rodízio Especial</h3>
+        <p>Nosso sucesso de vendas, com grande variedade de pratos, incluindo frutos do mar, servido no almoço e jantar, todos os dias.</p>
+        <p class="note">Incluso rodízio e bebidas.</p>
+      </article>
+      <article class="plan executivo">
+        <h3>Rodízio Executivo</h3>
+        <p>Uma opção completa para quem busca uma experiência de almoço diferenciada.</p>
+        <p class="note">Incluso rodízio, bebidas e sobremesa.</p>
+      </article>
+    </section>
 
-  <section class="highlights">
-    <div>
-      <img src="ambiente.jpg" alt="Ambiente">
-      <h3>Ambiente</h3>
-    </div>
-    <div>
-      <img src="experiencia.jpg" alt="Experiência Única">
-      <h3>Experiência Única</h3>
-    </div>
-    <div>
-      <img src="variedades.jpg" alt="Variedades">
-      <h3>Variedades</h3>
-    </div>
-    <div>
-      <img src="kids.jpg" alt="Espaço Kids">
-      <h3>Espaço Kids</h3>
-    </div>
-  </section>
+    <section class="highlights" aria-labelledby="highlightsTitle">
+      <h2 id="highlightsTitle" class="visually-hidden">Destaques</h2>
+      <figure class="highlight">
+        <img src="src/assets/Vista.jpg" alt="Vista do ambiente">
+        <figcaption>Ambiente</figcaption>
+      </figure>
+      <figure class="highlight">
+        <img src="src/assets/experiencia.jpg" alt="Ambiente sofisticado">
+        <figcaption>Experiência Única</figcaption>
+      </figure>
+      <figure class="highlight">
+        <img src="src/assets/bebidas.jpg" alt="Balcão de bebidas">
+        <figcaption>Variedades</figcaption>
+      </figure>
+      <figure class="highlight">
+        <img src="src/assets/areaKids.jpg" alt="Espaço para crianças">
+        <figcaption>Espaço Kids</figcaption>
+      </figure>
+    </section>
 
-  <section class="location">
-    <h2>Avenida Paulista, 1106</h2>
-    <h3>19º andar (rooftop)</h3>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.797599994913!2d-46.65426308452157!3d-23.565969868850083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8c7d56d27%3A0x9ebd94a6c2f80263!2sAvenida%20Paulista%2C%201106%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1684342088547!5m2!1spt-BR!2sbr"
-      width="80%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </section>
+    <section class="location" aria-labelledby="locationTitle">
+      <h2 id="locationTitle">Avenida Paulista, 1106</h2>
+      <p class="floor">19º andar (rooftop)</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.797599994913!2d-46.65426308452157!3d-23.565969868850083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8c7d56d27%3A0x9ebd94a6c2f80263!2sAvenida%20Paulista%2C%201106%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1684342088547!5m2!1spt-BR!2sbr"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Mapa de localização"
+        ></iframe>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <div class="contact">
-      <a href="https://wa.me/5511952811651" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+  <footer class="site-footer" aria-labelledby="footerContact">
+    <h2 id="footerContact" class="visually-hidden">Fale conosco</h2>
+    <address class="contact">
+      <a href="https://wa.me/5511952811651" target="_blank" rel="noopener">
+        <img
+          src="https://img.icons8.com/m_outlined/512/whatsapp.png"
+          alt="Ícone do WhatsApp"
+          class="whatsapp-icon"
+        />
         +55 (11) 95281-1651
-      </a><br>
+      </a>
+      <br>
       <a href="mailto:ikinomodan@gmail.com">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
+        <span class="icon email"></span>
         ikinomodan@gmail.com
       </a><br>
-      <a href="https://instagram.com/ikinomodan" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      <a href="https://instagram.com/ikinomodan" target="_blank" rel="noopener">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+          alt="Ícone do Instagram"
+          class="instagram-icon"
+        />
         @ikinomodan
       </a>
-    </div>
+    </address>
   </footer>
 </body>
 </html>

@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iki No Modan – Sobre</title>
+  <link rel="stylesheet" href="../src/css/sobre.css"/>
+  <script src="../src/js/script.js"></script>
 </head>
 <body>
-    
+  <!-- Header comum -->
+  <header>
+    <h1>Iki No Modan</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../pages/sobre.html">Sobre</a>
+      <a href="../pages/contato.html">Contato</a>
+      <a href="../pages/cardapio.html">Cardápio</a>
+      <button onclick="tryOpenNewContactPage()">Faça um pedido</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção “Sobre” -->
+    <section id="about" aria-labelledby="about-title" class="about-section">
+      <!-- Texto -->
+      <div class="about-text">
+        <h2 id="about-title">Sobre</h2>
+        <p>No coração da cidade, o Iki no Modan nasce da fusão entre a tradição japonesa e a ousadia contemporânea. Seu nome, que significa “O Estilo Moderno”, é um convite para experimentar uma culinária que honra séculos de cultura nipônica com um toque autoral e inovador.</p>
+        <p>Mais do que um restaurante, o Iki no Modan é uma experiência sensorial. Da arquitetura minimalista ao menu cuidadosamente elaborado, cada detalhe foi pensado para despertar o paladar, a memória e a emoção. Aqui, o sushi é arte, o ramen é poesia e o atendimento é uma extensão da hospitalidade japonesa.</p>
+        <p>Nossos chefs mesclam técnicas clássicas com ingredientes sazonais e toques criativos que surpreendem até os paladares mais exigentes. O bar de saquês e coquetéis artesanais completa a jornada, trazendo harmonizações inusitadas e encantadoras.</p>
+        <p>Seja para um jantar íntimo, uma celebração especial ou um momento de pausa na correria do dia, o Iki no Modan oferece um refúgio onde tradição e vanguarda convivem em perfeita harmonia. Venha descobrir o novo sabor do Japão.</p>
+      </div>
+
+      <!-- Imagem ilustrativa -->
+      <div class="about-image">
+        <div class="about-image-title">Sobre o Iki No Modan</div>
+        <img src="../src/assets/experiencia.jpg"
+             alt="Interior do restaurante Iki No Modan, decoração minimalista e mesas postas"
+        />
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé com branding e contatos -->
+  <footer>
+    <div class="brand-footer">
+      <h2>Iki No Modan</h2>
+      <p class="footer-heading">Entre em contato com a gente</p>
+      <ul class="contact-list">
+        <li>
+          <a href="https://wa.me/5511952811651" target="_blank" rel="noopener">
+            <span class="icon">📱</span>
+            +55 (11) 95281-1651
+          </a>
+        </li>
+        <li>
+          <a href="mailto:ikinomodanjp@gmail.com">
+            <span class="icon">✉️</span>
+            ikinomodanjp@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/ikinomodanjp" target="_blank" rel="noopener">
+            <span class="icon">📷</span>
+            @ikinomodanjp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

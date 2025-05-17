@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iki No Modan – Cardápio</title>
+  <link rel="stylesheet" href="../src/css/cardapio.css" />
+  <script src="../src/js/script.js"></script>
 </head>
 <body>
-    
+  <header>
+    <h1>Iki No Modan</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../pages/sobre.html">Sobre</a>
+      <a href="../pages/contato.html">Contato</a>
+      <a href="../pages/cardapio.html">Cardápio</a>
+      <button onclick="tryOpenNewContactPage()">Faça um pedido</button>
+    </nav>
+  </header>
+
+  <section class="hero" aria-label="Banner do cardápio">
+    <h2>Cardápio</h2>
+  </section>
+
+  <main class="menu-section">
+    <figure class="menu-logo">
+      <img src="../src/assets/logoNinja.png" alt="Logotipo Iki No Modan" width="120" />
+    </figure>
+
+    <h2>Menu Completo</h2>
+
+    <section aria-labelledby="rodizio-title">
+      <h3 id="rodizio-title">Opções de Rodízio</h3>
+      <ul class="menu-grid">
+        <li class="menu-item"><span>Expresso</span><span>R$ 89,00</span></li>
+        <li class="menu-item"><span>Especial</span><span>R$ 109,00</span></li>
+        <li class="menu-item"><span>Executivo</span><span>R$ 129,00</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="entradas-title">
+      <h3 id="entradas-title">Entradas</h3>
+      <ul class="menu-grid">
+        <li class="menu-item"><span>Edamame temperado</span><span>R$ 18,00</span></li>
+        <li class="menu-item"><span>Sunomono de pepino</span><span>R$ 12,00</span></li>
+        <li class="menu-item"><span>Missoshiru (sopa de missô)</span><span>R$ 12,00</span></li>
+        <li class="menu-item"><span>Gyoza (4 unidades)</span><span>R$ 16,00</span></li>
+        <li class="menu-item"><span>Shimeji na manteiga</span><span>R$ 22,00</span></li>
+        <li class="menu-item"><span>Hurumaki (rolinho primavera)</span><span>R$ 12,00</span></li>
+        <li class="menu-item"><span>Guioza de legumes (4 unid.)</span><span>R$ 16,00</span></li>
+        <li class="menu-item"><span>Guioza vegano (4 unid.)</span><span>R$ 16,00</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="pratos-quentes-title">
+      <h3 id="pratos-quentes-title">Pratos Quentes</h3>
+      <ul class="menu-grid">
+        <li class="menu-item"><span>Yakisoba tradicional</span><span>R$ 36,00</span></li>
+        <li class="menu-item"><span>Yakisoba frango</span><span>R$ 39,00</span></li>
+        <li class="menu-item"><span>Yakisoba carne</span><span>R$ 42,00</span></li>
+        <li class="menu-item"><span>Arroz gohan</span><span>R$ 8,00</span></li>
+        <li class="menu-item"><span>Arroz com shimeji</span><span>R$ 12,00</span></li>
+        <li class="menu-item"><span>Teppan de salmão</span><span>R$ 48,00</span></li>
+        <li class="menu-item"><span>Teppan de filé mignon</span><span>R$ 52,00</span></li>
+        <li class="menu-item"><span>Teppan de frango (grelhado)</span><span>R$ 42,00</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="sushi-sashimi-title">
+      <h3 id="sushi-sashimi-title">Sushi & Sashimi</h3>
+      <ul class="menu-grid">
+        <li class="menu-item"><span>Sashimi (6 fatias)</span><span>R$ 34,00</span></li>
+        <li class="menu-item"><span>Nigiri (duplas)</span><span>R$ 18,00</span></li>
+        <li class="menu-item"><span>Hossomaki (8 unidades)</span><span>R$ 18,00</span></li>
+        <li class="menu-item"><span>Uramaki (8 unidades)</span><span>R$ 26,00</span></li>
+        <li class="menu-item"><span>Jow de salmão (4 unidades)</span><span>R$ 28,00</span></li>
+        <li class="menu-item"><span>Jow de atum (4 unidades)</span><span>R$ 34,00</span></li>
+        <li class="menu-item"><span>Jow de vieira (4 unidades)</span><span>R$ 42,00</span></li>
+        <li class="menu-item"><span>Temaki (salmão, atum ou skin)</span><span>R$ 28,00</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="bebidas-title">
+      <h3 id="bebidas-title">Bebidas</h3>
+      <ul class="menu-grid">
+        <li class="menu-item"><span>Refrigerante</span><span>R$ 8,00</span></li>
+        <li class="menu-item"><span>Sakê nacional</span><span>R$ 18,00</span></li>
+        <li class="menu-item"><span>Sakê importado</span><span>R$ 26,00</span></li>
+        <li class="menu-item"><span>Cerveja (long neck)</span><span>R$ 12,00</span></li>
+        <li class="menu-item"><span>Caipirinha (frutas)</span><span>R$ 18,00</span></li>
+        <li class="menu-item"><span>Caipirinha (sakê)</span><span>R$ 22,00</span></li>
+        <li class="menu-item"><span>Água sem gás</span><span>R$ 6,00</span></li>
+        <li class="menu-item"><span>Água com gás</span><span>R$ 7,00</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="sobremesas-title">
+      <h3 id="sobremesas-title">Sobremesas</h3>
+      <ul class="menu-grid">
+        <li class="menu-item"><span>Harumaki de chocolate</span><span>R$ 18,00</span></li>
+        <li class="menu-item"><span>Sorvete de matchá</span><span>R$ 16,00</span></li>
+        <li class="menu-item"><span>Petit Gateau com sorvete</span><span>R$ 24,00</span></li>
+        <li class="menu-item"><span>Frutas da estação</span><span>R$ 12,00</span></li>
+        <li class="menu-item"><span>Mochi (unidade)</span><span>R$ 12,00</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>WhatsApp: (11) 98234-9851 | iki-no-modan@email.com | @ikinomodanjp</p>
+  </footer>
+
+  <a href="https://wa.me/5511982349851"
+     target="_blank"
+     class="whatsapp-button"
+     aria-label="Fale conosco no WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp-button/whatsapp.svg"
+         alt="Ícone do WhatsApp" />
+  </a>
 </body>
 </html>
