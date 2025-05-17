@@ -1,0 +1,115 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  
+  margin: 0;
+  background-color: #1a0000;
+  color: #C39453;
+  text-align: center;
+}
+
+/* estilização do header */
+
+h1, h2, h3, p, span, nav a, button {
+  font-weight: 300;
+}
+
+nav button {
+  margin-left: 20px;
+  background-color: #f5c542;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header {
+  background-color: #8b0000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #f5c542;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #e0c878;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/*  */
+
+.site-header {
+  background-color: #8B0000;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+.hero {
+  background-image: url('fundo-cardapio.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C39453;
+  font-size: 36px;
+}
+
+.menu-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #000;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+.menu-section h3 {
+  border-top:    1px solid #C39453;
+  border-bottom: 1px solid #C39453;
+  padding:       10px 0;
+  margin:        30px 0 20px;
+  text-transform: uppercase;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #C39453;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+}

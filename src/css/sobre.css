@@ -1,0 +1,126 @@
+/* RESET & TIPOGRAFIA */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1B0303;
+  color: #C39453;
+  line-height: 1.6;
+}
+
+/* HEADER (conforme fornecido) */
+h1, h2, h3, p, span, nav a, button {
+  font-weight: 300;
+}
+nav button {
+  margin-left: 20px;
+  background-color: #f5c542;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+header {
+  background-color: #8B0000;
+  text-align: center;
+  padding: 20px 0;
+}
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #f5c542;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: #e0c878;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* MAIN & “Sobre” */
+main {
+  padding: 40px 20px;
+}
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+.about-text p {
+  margin-bottom: 1em;
+}
+
+/* Card de imagem com título sobreposto */
+.about-image {
+  position: relative;
+}
+.about-image-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  color: #C39453;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.about-image img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+
+/* RODAPÉ */
+footer {
+  margin-top: 60px;
+  background: #000;
+}
+.brand-footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+.brand-footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.footer-heading {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+.contact-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.contact-list a {
+  color: #C39453;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+}
+.contact-list .icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
